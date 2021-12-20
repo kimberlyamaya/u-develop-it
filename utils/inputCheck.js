@@ -4,6 +4,7 @@
 module.exports = function(obj, ...props) {
   const errors = [];
 
+  // this is from code snapshot props.forEach(prop => {
   props.forEach((prop) => {
     // if property is blank or doesn't exist, add to errors array
     if (obj[prop] === undefined || obj[prop] === '') {
